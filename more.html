@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More | Computer Networking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+          <ul>
+            <img class="logo" src="computer_networking.jpg" alt="" />
+            <li><a class="tag" href="more.html">More</a></li>
+            <li><a class="tag"  href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </header>
+    <h1>More on Topologies</h1>
+    <div class="topologies">
+        <div class="contain">
+            <h2 class="top">Bus Topology</h2>
+            <p>Bus topology is a type of network topology where all nodes connect to a single communication line called the bus. It's easy to implement and cost-effective, making it an ideal choice for small networks. However, the bus can become congested with too many nodes, leading to collisions and performance issues. This topology is less reliable than other topologies, as the entire network can be affected if the communication line fails.
+    
+                To prevent signal reflection, the bus is terminated at both ends using resistors known as terminators. Additionally, a protocol called Carrier Sense Multiple Access with Collision Detection (CSMA/CD) is used to manage collisions. Despite its limitations, bus topology is still used in certain applications where the network size is small, and the communication requirements are not too demanding.</p>
+        </div>
+        <div class="contain">
+            <h2 class="top">Star Topology</h2>
+            <p>Star topology is a type of network topology where each node in the network is connected to a central hub or switch. The hub acts as a central point of connection, allowing each node to communicate with all other nodes in the network. This topology is commonly used in modern Ethernet networks and is considered to be more reliable and scalable than bus topology.
+
+                One of the main advantages of star topology is its reliability. If a node fails, the rest of the network can still function normally. Additionally, since each node has its own connection to the hub, the network is less likely to experience congestion or collisions. This makes star topology a good choice for larger networks with higher bandwidth requirements. However, it can be more expensive to implement and maintain than bus topology due to the need for more cabling and hardware.</p>
+        </div>
+       
+    </div>
+    <div class="topologies">
+        <div class="contain">
+            <h2 class="top">Ring Topology</h2>
+            <p>Ring topology is a type of network topology where each node in the network is connected to two neighboring nodes in a circular manner. This creates a single continuous loop of communication between all nodes in the network. Data is transmitted in one direction around the ring, with each node in the network repeating and amplifying the signal to the next node.
+
+                One of the main advantages of ring topology is that it is efficient in handling data traffic since data only travels in one direction around the ring, reducing the likelihood of collisions. Additionally, the use of token passing protocols ensures that only one node is allowed to transmit data at any given time, further improving network efficiency. However, ring topology can be less reliable than other topologies, as the entire network can be affected if any one node fails or if the communication line is broken. Overall, ring topology is commonly used in small networks with low to moderate bandwidth requirements.</p>
+        </div>
+        <div class="contain">
+            <h2 class="top">Mesh Topology</h2>
+            <p>Mesh topology is a type of network topology where each node is connected to every other node in the network. This creates multiple paths for data to travel, making the network highly resilient to node failures and network congestion. Mesh topology is commonly used in large, mission-critical networks such as those used in military and financial applications.
+
+                One of the main advantages of mesh topology is its high level of redundancy. Since each node is connected to every other node, there are always multiple paths for data to travel. This means that if one node fails or a connection is lost, the network can continue to function normally by rerouting data through other paths. However, this redundancy comes at a cost, as mesh topology requires a large amount of cabling and hardware to implement and maintain. Despite its complexity, mesh topology is a highly effective choice for large, high-availability networks.</p>
+        </div>
+       
+    </div>
+    
+   
+</body>
+</html>
