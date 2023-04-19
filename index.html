@@ -1,54 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>More | Computer Networking</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Networking</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="image-removebg-preview.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="nav">
-          <ul>
-            <img class="logo" src="computer_networking.jpg" alt="" />
-            <li><a class="tag" href="more.html">More</a></li>
-            <li><a class="tag"  href="index.html">Home</a></li>
-          </ul>
-        </nav>
-      </header>
-    <h1>More on Topologies</h1>
-    <div class="topologies">
-        <div class="contain">
-            <h2 class="top">Bus Topology</h2>
-            <p>Bus topology is a type of network topology where all nodes connect to a single communication line called the bus. It's easy to implement and cost-effective, making it an ideal choice for small networks. However, the bus can become congested with too many nodes, leading to collisions and performance issues. This topology is less reliable than other topologies, as the entire network can be affected if the communication line fails.
-    
-                To prevent signal reflection, the bus is terminated at both ends using resistors known as terminators. Additionally, a protocol called Carrier Sense Multiple Access with Collision Detection (CSMA/CD) is used to manage collisions. Despite its limitations, bus topology is still used in certain applications where the network size is small, and the communication requirements are not too demanding.</p>
-        </div>
-        <div class="contain">
-            <h2 class="top">Star Topology</h2>
-            <p>Star topology is a type of network topology where each node in the network is connected to a central hub or switch. The hub acts as a central point of connection, allowing each node to communicate with all other nodes in the network. This topology is commonly used in modern Ethernet networks and is considered to be more reliable and scalable than bus topology.
-
-                One of the main advantages of star topology is its reliability. If a node fails, the rest of the network can still function normally. Additionally, since each node has its own connection to the hub, the network is less likely to experience congestion or collisions. This makes star topology a good choice for larger networks with higher bandwidth requirements. However, it can be more expensive to implement and maintain than bus topology due to the need for more cabling and hardware.</p>
-        </div>
-       
+      <nav class="nav">
+        <ul>
+          <img class="logo" src="computer_networking.jpg" alt="" />
+          <li><a class="tag" href="more.html">More</a></li>
+          <li><a class="tag"  href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Computer <span>Networking</span></h1>
+    <p class="description">
+      <b>Computer networking</b> links devices for sharing info & resources.
+      Topology refers to their arrangement & affects performance, scalability &
+      management. Choice of topology depends on network needs & impacts data
+      transmission & control, making it essential to networking.
+    </p>
+    <h2>Topologies</h2>
+    <div class="container">
+      <div>
+        <h3>Bus Topology: -</h3><span class="topology"><p> <br> Bus topology is a simple and flexible network topology where all devices are connected to a single communication channel called a "bus." While it can be prone to data collisions, it's an inexpensive choice for small to medium-sized...<a class="learn" href="more.html">Learn More</a></p></span>
+      </div>
+      <div>
+        <h3>Star Topology: -</h3><span class="topology"><p> <br> Star topology has a central hub connecting all devices. It's easy to set up but if the hub fails, the network can be affected. Data flows from the devices to the hub and then to the ...<a class="learn" href="more.html">Learn More</a></p></span>
+      </div>
+      <div>
+        <h3>Ring Topology: -</h3><span class="topology"><p> <br> In a ring topology, devices are connected in a circular chain, with data flowing in one direction. It's difficult to add or remove devices, but it prevents data collisions. However, if one device fails, the entire network can...<a class="learn" href="more.html">Learn More</a></p></span>
+      </div>
+      <div>
+        <h3>Mesh Topology: -</h3><span class="topology"><p> <br> Bus topology is a simple and flexible network topology where all devices are connected to a single communication channel called a "bus." While it can be prone to data collisions, it's an inexpensive choice for small to medium-sized...<a class="learn" href="more.html">Learn More</a></p></span>
+      </div>
     </div>
-    <div class="topologies">
-        <div class="contain">
-            <h2 class="top">Ring Topology</h2>
-            <p>Ring topology is a type of network topology where each node in the network is connected to two neighboring nodes in a circular manner. This creates a single continuous loop of communication between all nodes in the network. Data is transmitted in one direction around the ring, with each node in the network repeating and amplifying the signal to the next node.
 
-                One of the main advantages of ring topology is that it is efficient in handling data traffic since data only travels in one direction around the ring, reducing the likelihood of collisions. Additionally, the use of token passing protocols ensures that only one node is allowed to transmit data at any given time, further improving network efficiency. However, ring topology can be less reliable than other topologies, as the entire network can be affected if any one node fails or if the communication line is broken. Overall, ring topology is commonly used in small networks with low to moderate bandwidth requirements.</p>
-        </div>
-        <div class="contain">
-            <h2 class="top">Mesh Topology</h2>
-            <p>Mesh topology is a type of network topology where each node is connected to every other node in the network. This creates multiple paths for data to travel, making the network highly resilient to node failures and network congestion. Mesh topology is commonly used in large, mission-critical networks such as those used in military and financial applications.
-
-                One of the main advantages of mesh topology is its high level of redundancy. Since each node is connected to every other node, there are always multiple paths for data to travel. This means that if one node fails or a connection is lost, the network can continue to function normally by rerouting data through other paths. However, this redundancy comes at a cost, as mesh topology requires a large amount of cabling and hardware to implement and maintain. Despite its complexity, mesh topology is a highly effective choice for large, high-availability networks.</p>
-        </div>
-       
-    </div>
-    
-   
-</body>
+  </body>
 </html>
